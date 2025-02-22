@@ -30,7 +30,7 @@ def screenshot_players():
     width = 370 #ширина
     height = 330 #высота
     screenshot = pyautogui.screenshot(region=(left, top, width, height))
-    screenshot.save("/players/window.png")
+    screenshot.save("players/window.png")
 
 
 def modify_image(pillow_image,image_path):
@@ -41,7 +41,7 @@ def modify_image(pillow_image,image_path):
 
 
 def crop_players():
-    image = Image.open('/players/window.png')
+    image = Image.open('players/window.png')
     left = 0
     top = 0
     width = 370 #ширина
