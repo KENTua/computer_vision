@@ -124,9 +124,9 @@ def crop_players():
                             level=player_info['level']
                     if 'Вульпера'in race: # 'Чернокниж' in class_ or
                         invite(nickname)
-                    elif 'Ночная' in race or 'Высшая' in race or 'Орк'in race or 'Эльфийка'in race:
+                    elif level!='' and ('Ночная' in race or 'Высшая' in race or 'Орк'in race or 'Эльфийка'in race):
                         level=int(level)
-                        if level>60:
+                        if level>59:
                             invite(nickname)
                 
                 Nicknames.create(nickname=nickname)
